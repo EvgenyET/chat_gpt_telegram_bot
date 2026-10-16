@@ -42,7 +42,7 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Задайте OPENAI_API_KEY и TELEGRAM_BOT_TOKEN. Для запуска нужны собственный Telegram-бот и доступ к используемой в коде модели/API.
+Задайте OPENAI_API_KEY, TELEGRAM_BOT_TOKEN и TELEGRAM_ALLOWED_USER_ID (числовой ID пользователя, которому бот разрешает отвечать). Для запуска нужны собственный Telegram-бот и доступ к используемой в коде модели/API.
 
 Переменные окружения: `OPENAI_API_KEY`, `TELEGRAM_BOT_TOKEN`. Образец находится в [.env.example](.env.example). Сам файл .env автоматически не загружается: исходники читают окружение процесса. Значения нужно передать перед запуском, например в PowerShell:
 
